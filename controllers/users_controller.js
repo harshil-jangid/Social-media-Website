@@ -70,26 +70,7 @@ module.exports.create = function(req, res){
             req.flash('error',error)
             return res.redirect('back');
         }
-    // if (req.body.password != req.body.confirm_password){
-    //     return res.redirect('back');
-    // }
-
-    // User.findOne({email: req.body.email}, function(err, user){
-    //     if(err){console.log('error in finding user in signing up'); return}
-
-    //     if (!user){
-    //         User.create({email: req.body.email,
-    //                     password:req.body.password,
-    //                     name:req.body.name
-    //         }, function(err, user){
-    //             if(err){console.log('error in creating user while signing up'); return}
-    //             return res.redirect('/users/sign-up');
-    //         })
-    //     }else{
-    //         return res.redirect('back');
-    //     }
-
-    // });
+    
 }
 module.exports.update= async function(req,res){
     if(req.user.id == req.params.id){
