@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://Localhost/FBook', { useNewUrlParser: true },);
+const env=require('./environment')
+mongoose.connect(`mongodb://Localhost/${env.db}`, { useNewUrlParser: true },);
 
 const db = mongoose.connection;
 

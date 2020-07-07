@@ -1,0 +1,10 @@
+<form action="/users/changepass" method="POST">
+    <div class="form-group">
+        <input type="hidden" name="email" value="<%=payload.email%>">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="exampleInputPassword2">Password</label>
+        <input type="password" name="confirm_password" class="form-control" id="exampleInputPassword2" placeholder="Comfirm Password">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
