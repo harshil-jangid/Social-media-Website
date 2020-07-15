@@ -28,7 +28,7 @@ if(env.name=='development'){
     }));
 }
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({}));
 app.use(cookieParser());
 app.use(expressLayouts);
 app.use(express.static(env.asset_path));
